@@ -2,9 +2,10 @@
   "name": "mitrolisp",
   "version": "1.0.0",
   "description": "A new programming language inspired from Lisp",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,32 @@
     "url": "https://github.com/mit-27/MitroLisp/issues"
   },
   "homepage": "https://github.com/mit-27/MitroLisp#readme",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/generator": "^7.4.4",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "chalk": "^2.4.2",
+    "inquirer": "^6.3.1",
+    "lodash": "^4.17.11",
+    "minimist": "^1.2.0"
+  },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "mock-fs": "^4.10.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testRegex": "^.+\\.test.jsx?$",
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
