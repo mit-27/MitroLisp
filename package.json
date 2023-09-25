@@ -1,0 +1,22 @@
+{
+  "name": "mitrolisp",
+  "version": "1.0.0",
+  "description": "A new programming language inspired from Lisp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mit-27/MitroLisp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mit-27/MitroLisp/issues"
+  },
+  "homepage": "https://github.com/mit-27/MitroLisp#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
