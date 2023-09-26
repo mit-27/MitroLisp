@@ -2,9 +2,12 @@
   "name": "mitrolisp",
   "version": "1.0.0",
   "description": "A new programming language inspired from Lisp",
-  "type": "module",
+  "bin": {
+    "mitrolisp": "bin/mitrolisp"
+  },
   "main": "index.js",
   "scripts": {
+    "start": "node src/repl.js",
     "test": "jest"
   },
   "repository": {
