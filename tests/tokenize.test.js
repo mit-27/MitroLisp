@@ -70,7 +70,6 @@ describe(tokenize, () => {
         expect(tokenize(input)).toEqual(result);
     });
 
-    // Exercise 2 Begin
     it('should correctly tokenize a simple expression', () => {
         const input = '(add 2 3)';
         const result = [
@@ -96,7 +95,6 @@ describe(tokenize, () => {
 
         expect(tokenize(input)).toEqual(result);
     });
-    // Exercise 2 End
 
     it('should know about strings', () => {
         const input = '(log "hello" "world")';
