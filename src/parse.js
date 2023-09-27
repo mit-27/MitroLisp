@@ -1,6 +1,6 @@
 const { isOpeningParenthesis, isClosingParenthesis } = require('./identify');
 // const { specialForms } = require('./special-forms');
-const { peek, pop } = require('./utlities');
+const { peek, pop } = require('./utilities');
 
 const parenthesize = tokens => {
     const token = pop(tokens);
